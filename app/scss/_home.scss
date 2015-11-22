@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+//==================================
+$foregroundTextColor: $primary-color-light;
+$overlayColor: $secondary-dark-text-color;
+//===================================
+
+.hero {
+  height: 80vh;
+  .intro-text {
+    padding-top: 40%;
+    color: $foregroundTextColor;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  // small screen
+  .intro-text p {
+    font-size: 1.5em;
+  }
+  
+  // meduim screen
+  @media only screen and (min-width: 40.063em) {
+    .intro-text {
+      padding-top: 30%;
+    }
+    .intro-text p {
+      font-size: 1.875em;
+    }
+  }
+
+  // large screen
+  @media only screen and (min-width: 64.063em) {
+    .intro-text {
+      padding-top: 15%;
+    }
+    .intro-text p {
+      font-size: 2.5em;
+    }
+  }
+}
+
+.hero-overlay
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $overlayColor;
+  height:80vh;
+  opacity: 0;
+}
+
+
+.img-bg-section60
+{
+  height: 60vh;
+  
+  h1
+  {
+    background: $primary-color;
+    color: $primary-light-text-color;
+    text-align: center;
+  }
+  
+   .section-header {
+     padding-top: 50%;
+   }
+
+  @media only screen and (min-width: 40.063em) {
+    .section-header {
+      padding-top: 40%;
+    }
+  }  
+
+  @media only screen and (min-width: 64.063em) {
+    .section-header {
+      padding-top: 25%;
+    }
+   }
+}
+
+.img-bg-section60-overlay
+{
+  content: '';
+  position: absolute;
+  //top: need to be set from javascript on page load
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $overlayColor;
+  height:60vh;
+  opacity: 0;
+}
+
+// sample background images
+.accomodation
+{
+  background: url("../img/01.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+  
+.nature
+{
+  background: url("../img/11.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.activities
+{
+  background: url("../img/08.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+// Not important for the effect. 
+.homecontent
+{
+  padding-top: 2%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif, Helvetica, Arial;
+
+  h1
+  {
+    color: $foregroundTextColor;
+    font-size: 2.5em;
+  }
+  p{
+    color: $secondary-dark-text-color;
+  }
+}

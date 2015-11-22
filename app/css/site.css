@@ -1,0 +1,355 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+html {
+  font-size: 16px; }
+
+body {
+  font-family: "Roboto", "PT Sans", sans-serif, Helvetica, Arial;
+  background-color: rgba(0, 0, 0, 0.02);
+  background-size: cover;
+  background-attachment: fixed;
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%; }
+
+.main-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.content-wrapper {
+  flex: 1; }
+
+.hero {
+  height: 80vh; }
+  .hero .intro-text {
+    padding-top: 40%;
+    color: #C8E6C9;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif; }
+  .hero .intro-text p {
+    font-size: 1.5em; }
+  @media only screen and (min-width: 40.063em) {
+    .hero .intro-text {
+      padding-top: 30%; }
+    .hero .intro-text p {
+      font-size: 1.875em; } }
+  @media only screen and (min-width: 64.063em) {
+    .hero .intro-text {
+      padding-top: 15%; }
+    .hero .intro-text p {
+      font-size: 2.5em; } }
+
+.hero-overlay {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #727272;
+  height: 80vh;
+  opacity: 0; }
+
+.img-bg-section60 {
+  height: 60vh; }
+  .img-bg-section60 h1 {
+    background: #4CAF50;
+    color: white;
+    text-align: center; }
+  .img-bg-section60 .section-header {
+    padding-top: 50%; }
+  @media only screen and (min-width: 40.063em) {
+    .img-bg-section60 .section-header {
+      padding-top: 40%; } }
+  @media only screen and (min-width: 64.063em) {
+    .img-bg-section60 .section-header {
+      padding-top: 25%; } }
+
+.img-bg-section60-overlay {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #727272;
+  height: 60vh;
+  opacity: 0; }
+
+.accomodation {
+  background: url("../img/01.jpg") no-repeat center center;
+  background-size: cover; }
+
+.nature {
+  background: url("../img/11.jpg") no-repeat center center;
+  background-size: cover; }
+
+.activities {
+  background: url("../img/08.jpg") no-repeat center center;
+  background-size: cover; }
+
+.homecontent {
+  padding-top: 2%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif, Helvetica, Arial; }
+  .homecontent h1 {
+    color: #C8E6C9;
+    font-size: 2.5em; }
+  .homecontent p {
+    color: #727272; }
+
+/* card styles _card.scss */
+.column, .columns {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem; }
+
+@media only screen and (min-width: 64.0625em) {
+  .column, .columns {
+    padding-left: 0rem;
+    padding-right: 0.9375rem; } }
+
+.card {
+  margin-top: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.137255) 0px 4px 5px 0px, rgba(0, 0, 0, 0.117647) 0px 1px 10px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px -1px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: white; }
+  .card .ribbon {
+    position: relative;
+    min-height: 40px;
+    background-color: #4CAF50; }
+    .card .ribbon .title {
+      position: absolute;
+      left: 0px;
+      padding-left: 20px;
+      padding-top: 5px; }
+      .card .ribbon .title h4 {
+        font-family: "Roboto Condensed", sans-serif, Helvetica;
+        color: white;
+        margin: 0px;
+        padding: 0px; }
+      .card .ribbon .title h3 {
+        font-family: "Roboto Condensed", sans-serif, Helvetica;
+        color: white;
+        margin: 0px;
+        padding: 0px; }
+  .card .header {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    position: relative;
+    min-height: 100px;
+    background-color: #4CAF50; }
+    .card .header img {
+      max-height: 240px;
+      min-height: 240px;
+      width: 100%; }
+    .card .header .title {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      padding: 20px; }
+      .card .header .title h4 {
+        font-family: "Roboto Condensed", sans-serif, Helvetica;
+        color: white;
+        margin: 0px;
+        padding: 0px; }
+      .card .header .title h3 {
+        font-family: "Roboto Condensed", sans-serif, Helvetica;
+        color: white;
+        margin: 0px;
+        padding: 0px; }
+
+.card .authorinfo {
+  align-items: center;
+  box-sizing: border-box;
+  color: #727272;
+  display: flex;
+  flex-direction: colum;
+  font-size: 13px;
+  font-weight: normal;
+  justify-content: flex-start;
+  padding: 20px;
+  text-align: left; }
+  .card .authorinfo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px; }
+  .card .authorinfo span {
+    color: #727272;
+    display: block;
+    padding-left: 5px; }
+
+.card .content {
+  color: #727272;
+  padding: 20px;
+  text-align: left;
+  min-height: 150px;
+  max-height: 150px;
+  overflow: hidden; }
+
+.card:hover {
+  opacity: .8;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease; }
+
+#main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; }
+
+section {
+  flex: 1; }
+
+/* end card styles _card.scss */
+/* Top Nav styles */
+.namelogo h1 {
+  font-family: "Roboto", "PT Sans", sans-serif, Helvetica, Arial;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center; }
+
+@media only screen and (min-width: 40.063em) {
+  .namelogo h1 {
+    font-size: 20px;
+    text-align: center; } }
+
+@media only screen and (min-width: 64.063em) {
+  .namelogo h1 {
+    font-size: 24px;
+    text-align: left; } }
+
+.contain-to-grid {
+  background: white;
+  border-bottom: 1px solid #B6B6B6; }
+
+.top-bar {
+  background: white; }
+  .top-bar .namelogo h1 a {
+    color: #388E3C;
+    width: auto; }
+  .top-bar .top-bar-section li:not(.has-form) a:not(.button) {
+    background: white;
+    font-size: 1em;
+    font-weight: 600;
+    color: #388E3C; }
+  .top-bar .top-bar-section li:not(.has-form) a:not(.button):hover {
+    background: white;
+    color: #4CAF50; }
+
+#google-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #c0c0c0; }
+
+@media only screen and (min-width: 768px) {
+  #google-container {
+    height: 300px; } }
+
+@media only screen and (min-width: 1170px) {
+  #google-container {
+    height: 600px; } }
+
+#cd-google-map {
+  position: relative; }
+
+#cd-google-map address {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 1em 1em;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 13px;
+  font-size: 0.8125rem; }
+
+@media only screen and (min-width: 768px) {
+  #cd-google-map address {
+    font-size: 15px;
+    font-size: 0.9375rem;
+    text-align: center; } }
+
+#cd-zoom-in,
+#cd-zoom-out {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 32px;
+  color: #fff;
+  font-size: 18px;
+  background-color: #4CAF50; }
+
+.no-touch #cd-zoom-in:hover,
+.no-touch #cd-zoom-out:hover {
+  background-color: #d36868; }
+
+@media only screen and (min-width: 768px) {
+  #cd-zoom-in, #cd-zoom-out {
+    margin-left: 50px; } }
+
+#cd-zoom-in {
+  background-position: 50% 0;
+  margin-top: 10px;
+  margin-bottom: 1px; }
+
+@media only screen and (min-width: 768px) {
+  #cd-zoom-in {
+    margin-top: 50px; } }
+
+#cd-zoom-out {
+  background-position: 50% -32px; }
+
+.footer {
+  background-color: #212121;
+  color: rgba(255, 255, 255, 0.7); }
+
+.footer p {
+  margin-top: 10px; }
+
+.footer p.slogan {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1.8rem;
+  margin: 0 0 1rem; }
+
+.footer p.copywrite {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.875rem;
+  margin: 0; }
+
+.footer .links a {
+  list-style: none;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 3rem 0 2rem;
+  margin: 0; }
+
+.footer .links a::after {
+  content: "•";
+  padding: 0 0.4rem 0 0.8rem; }
+
+.footer .links a:last-child::after {
+  content: "";
+  padding: 0 0.4rem 0 0.8rem; }
+
+.button {
+  background: #4CAF50; }
+
+.button:hover {
+  background: #388E3C; }
+
+/*# sourceMappingURL=site.css.map */

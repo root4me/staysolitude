@@ -1,0 +1,19 @@
+{
+  "name": "harish",
+  "version": "0.0.1",
+  "authors": [
+    "harish"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "foundation": "~5.5.2"
+  }
+}

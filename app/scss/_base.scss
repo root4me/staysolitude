@@ -1,0 +1,58 @@
+
+$primary-font-family : 'Roboto', 'PT Sans', sans-serif, Helvetica, Arial;
+$primary-title-font-family : 'Roboto Condensed', sans-serif, Helvetica;
+
+$dark-text-color: rgb(0,0,0); // dark text on light background
+//$primary-dark-text-color: rgba($dark-text-color, .87); 
+//$secondary-dark-text-color: rgba($dark-text-color, .54);
+//$disabled-dark-text-color: rgba($dark-text-color, .26);
+//$divider-dark-text-color: rgba($dark-text-color, .12);
+
+
+$light-text-color: rgb(255,255,255); //light text on dark background
+$primary-light-text-color: rgba($light-text-color, 1); 
+$secondary-light-text-color: rgba($light-text-color, .70);
+$disabled-light-text-color: rgba($light-text-color, .30);
+
+$primary-color: #4CAF50;
+$primary-color-dark:  #388E3C;
+$primary-color-light: #C8E6C9;
+$accent-color: #FF9800;
+$primary-dark-text-color: #212121;
+$secondary-dark-text-color: #727272;
+$divider-color: #B6B6B6;
+
+
+$default-boxshadow: rgba(0, 0, 0, 0.137255) 0px 4px 5px 0px, 
+                    rgba(0, 0, 0, 0.117647) 0px 1px 10px 0px, 
+                    rgba(0, 0, 0, 0.2) 0px 2px 4px -1px;
+                    
+
+html{
+  font-size: 16px;
+}
+body {
+  font-family: "Roboto", "PT Sans", sans-serif, Helvetica, Arial;
+  background-color: rgba(0, 0, 0, 0.02);
+  background-size: cover;
+  background-attachment: fixed;
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+}
+
+// This goes around the whole content
+.main-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex: 1;
+}
+
+ 

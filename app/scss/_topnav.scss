@@ -1,0 +1,62 @@
+/* Top Nav styles */
+
+$top-nav-background: rgb(255,255,255);
+$top-nav-bottom: 1px solid $divider-color;
+
+
+.namelogo h1 {
+    font-family: $primary-font-family;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media only screen and (min-width: 40.063em) {
+    .namelogo h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 64.063em) {
+    .namelogo h1 {
+        font-size: 24px;
+        text-align: left;
+    }
+}
+
+.contain-to-grid {
+    background: $top-nav-background;
+    border-bottom: $top-nav-bottom;
+}
+
+.top-bar {
+    background: $top-nav-background;
+    .namelogo
+    {
+        h1
+        {
+            a{            
+                color: $primary-color-dark;
+                width: auto;            
+            }
+        }
+    }
+
+// overrive foundation top nav right sub menu style
+    .top-bar-section li:not(.has-form) a:not(.button) 
+    {
+        background: $top-nav-background;
+        font-size: 1em;
+        font-weight: 600;
+        color: $primary-color-dark;
+    }
+    .top-bar-section li:not(.has-form) a:not(.button):hover {
+          background: $top-nav-background; 
+          color:$primary-color;
+    }
+
+}
+    
+
+

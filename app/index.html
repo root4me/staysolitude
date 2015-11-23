@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="css/site.css" />
     <!-- /build -->
 
+    <!-- build:css css/lightbox.min.css -->
+    <link href="../bower_components/lightbox2/dist/css/lightbox.css" rel="stylesheet">
+    <!-- /build -->
+    
     <!-- build:js js/modernizr.min.js -->
     <script src="../bower_components/foundation/js/vendor/modernizr.js"></script>
     <!-- /build -->
@@ -106,7 +110,9 @@ Too lazy to style it and get it responsive. Instead using zurb foundation grid '
                 <div class="large-6 columns">
                     <div class="card">
                         <div class="header">
-                            <img src="img/04.jpg">
+                            <a href="img/04.jpg" data-lightbox="accomodation" data-title="Cottage">
+                                <img src="img/04.jpg">
+                            </a>
                             <!--
                             <span class="title"><h4>Cottage</h4></span>
                             -->
@@ -115,7 +121,7 @@ Too lazy to style it and get it responsive. Instead using zurb foundation grid '
                         <div class="ribbon">
                             <span class="title"><h4>Cottage</h4></span>
                         </div>
-                        
+
                         <div>
                             <div class="large-12 columns content ">
                                 <p>Stay one with nature
@@ -124,12 +130,15 @@ Too lazy to style it and get it responsive. Instead using zurb foundation grid '
                             </div>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="large-6 columns">
                     <div class="card">
                         <div class="header">
-                            <img src="img/12.jpg">
+                            <a href="img/12.jpg" data-lightbox="accomodation" data-title="Bed room">
+                                <img src="img/12.jpg">
+                            </a>
                         </div>
                         <div class="ribbon">
                             <span class="title"><h4>Bed room</h4></span>
@@ -150,7 +159,9 @@ Too lazy to style it and get it responsive. Instead using zurb foundation grid '
                 <div class="large-6 columns">
                     <div class="card">
                         <div class="header">
-                            <img src="img/11.jpg">
+                            <a href="img/11.jpg" data-lightbox="accomodation" data-title="Living room">
+                                <img src="img/11.jpg">
+                            </a>
                         </div>
                         <div class="ribbon">
                             <span class="title"><h4>Living room</h4></span>
@@ -168,7 +179,9 @@ Too lazy to style it and get it responsive. Instead using zurb foundation grid '
                 <div class="large-6 columns">
                     <div class="card">
                         <div class="header">
-                            <img src="img/02.jpg">
+                            <a href="img/02.jpg" data-lightbox="accomodation" data-title="Kitchen">
+                                <img src="img/02.jpg">
+                            </a>
                         </div>
                         <div class="ribbon">
                             <span class="title"><h4>Kitchen</h4></span>
@@ -206,7 +219,9 @@ Too lazy to style it and get it responsive. Instead using zurb foundation grid '
                 <div class="large-6 columns">
                     <div class="card">
                         <div class="header">
-                            <img src="img/05.jpg">
+                            <a href="img/05.jpg" data-lightbox="activities" data-title="Around the cottage">
+                                <img src="img/05.jpg">
+                            </a>
                         </div>
                         <div class="ribbon">
                             <span class="title"><h4>Around the cottage</h4></span>
@@ -224,7 +239,9 @@ Too lazy to style it and get it responsive. Instead using zurb foundation grid '
                 <div class="large-6 columns">
                     <div class="card">
                         <div class="header">
-                            <img src="img/Viripara.jpg">
+                            <a href="img/Viripara.jpg" data-lightbox="activities" data-title="Viripara">
+                                <img src="img/Viripara.jpg">
+                            </a>
                         </div>
                         <div class="ribbon">
                             <span class="title"><h4>Viripara Waterfalls</h4></span>
@@ -245,7 +262,9 @@ Too lazy to style it and get it responsive. Instead using zurb foundation grid '
                 <div class="large-6 columns">
                     <div class="card">
                         <div class="header">
-                            <img src="img/anakulam.jpg">
+                            <a href="img/anakulam.jpg" data-lightbox="activities" data-title="Anakulam">
+                                <img src="img/anakulam.jpg">
+                            </a>
                         </div>
                         <div class="ribbon">
                             <span class="title"><h4>Anakulam</h4></span>
@@ -263,7 +282,9 @@ Too lazy to style it and get it responsive. Instead using zurb foundation grid '
                 <div class="large-6 columns">
                     <div class="card">
                         <div class="header">
-                            <img src="img/muniyaras.jpg">
+                            <a href="img/muniyaras.jpg" data-lightbox="activities" data-title="Muniyara">
+                                <img src="img/muniyaras.jpg">
+                            </a>
                         </div>
                         <div class="ribbon">
                             <span class="title"><h4>Muniyara</h4></span>
@@ -284,7 +305,9 @@ Too lazy to style it and get it responsive. Instead using zurb foundation grid '
                 <div class="large-6 columns">
                     <div class="card">
                         <div class="header">
-                            <img src="img/Organic-Village.jpg">
+                            <a href="img/Organic-Village.jpg" data-lightbox="activities" data-title="Organic Village">
+                                <img src="img/Organic-Village.jpg">
+                            </a>
                         </div>
                         <div class="ribbon">
                             <span class="title"><h4>Organic village</h4></span>
@@ -302,7 +325,9 @@ Too lazy to style it and get it responsive. Instead using zurb foundation grid '
                 <div class="large-6 columns">
                     <div class="card">
                         <div class="header">
-                            <img src="img/hanging-bridge.jpg">
+                            <a href="img/hanging-bridge.jpg" data-lightbox="activities" data-title="Hanging Bridge">
+                                <img src="img/hanging-bridge.jpg">
+                            </a>
                         </div>
                         <div class="ribbon">
                             <span class="title"><h4>Hanging bridge</h4></span>
@@ -388,9 +413,15 @@ Too lazy to style it and get it responsive. Instead using zurb foundation grid '
     <script src="../bower_components/foundation/js/foundation/foundation.topbar.js "></script>
     <!-- /build -->
 
+    <!-- build:js js/lightbox.min.js -->
+    <script src="../bower_components/lightbox2/dist/js/lightbox.js"></script>
+    <!-- /build -->
+        
     <!-- build:js js/app.min.js -->
     <script src="js/app.js "></script>
     <!-- /build -->
+
+
 
     <script>
         $(window).on("load", function(e) {
@@ -408,13 +439,14 @@ Too lazy to style it and get it responsive. Instead using zurb foundation grid '
         });
 
         $('a').click(function() {
-            $('html, body').animate({
-                scrollTop: $($.attr(this, 'href')).offset().top
-            }, 800);
-            return false;
+
+            if (($.attr(this, 'href') !== undefined) && (($.attr(this, 'href')).substring(0, 1) == "#")) {
+                $('html, body').animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                }, 800);
+                return false;
+            }
         });
-
-
     </script>
 
 </body>

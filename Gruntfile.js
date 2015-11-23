@@ -11,11 +11,12 @@ module.exports = function(grunt) {
         app: 'app',
         dist: 'dist',
         srcjs: ['js/*.*', '../bower_components/foundation/js/vendor/modernizr.js', '../bower_components/jquery/dist/jquery.js',
-            '../bower_components/foundation/js/foundation/foundation.js', '../bower_components/foundation/js/foundation/foundation.topbar.js'
+            '../bower_components/foundation/js/foundation/foundation.js', '../bower_components/foundation/js/foundation/foundation.topbar.js',
+            '../bower_components/lightbox2/dist/js/lightbox.js'
         ],
         srcscss: ['scss/*.*'],
-        srccss: ['css/*.*', '../bower_components/foundation/css/foundation.css'],
-        srcimg: ['img/*.*'],
+        srccss: ['css/*.*', '../bower_components/foundation/css/foundation.css', '../bower_components/lightbox2/dist/css/lightbox.css'],
+        srcimg: ['img/*.*' , '../bower_components/lightbox2/dist/images/*.*' ],
     };
 
     // Define the configuration for all the tasks

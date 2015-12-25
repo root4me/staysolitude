@@ -56,7 +56,24 @@ module.exports = function(grunt) {
 
                 }]
             },
+            lightboximg: {
+                files: [{
+                    expand: true,
+                    cwd: 'bower_components/lightbox2/dist/',
+                    src: 'images/*.*',
+                    dest: '<%= config.dist %>',
 
+                }]
+            },
+            cname: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= config.app %>',
+                    src: 'CNAME',
+                    dest: '<%= config.dist %>',
+
+                }]
+            },
         },
 
         uglify: {
@@ -140,7 +157,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', ['usage']);
     grunt.registerTask('dev', ['sass', 'watch:scss']);
-    grunt.registerTask('build', ['clean:dist','sass', 'copy:distimg', 'processhtml', 'cssmin', 'uglify', 'htmlmin']);
+    grunt.registerTask('build', ['clean:dist','sass', 'copy:distimg','copy:lightboximg','copy:cname', 'processhtml', 'cssmin', 'uglify', 'htmlmin']);
     grunt.registerTask('build-nomin', ['clean:dist','sass', 'copy:distimg', 'processhtml']);
     
     grunt.registerTask('usage', 'display usage parameters', function() {

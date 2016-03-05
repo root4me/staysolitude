@@ -81,15 +81,15 @@ body {
   opacity: 0; }
 
 .accomodation {
-  background: url("../img/01.jpg") no-repeat center center;
+  background: url("../img/accomodation_banner.jpg") no-repeat center center;
   background-size: cover; }
 
 .nature {
-  background: url("../img/11.jpg") no-repeat center center;
+  background: url("../img/living_banner.jpg") no-repeat center center;
   background-size: cover; }
 
 .activities {
-  background: url("../img/08.jpg") no-repeat center center;
+  background: url("../img/activities_banner.jpg") no-repeat center center;
   background-size: cover; }
 
 .homecontent {

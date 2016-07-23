@@ -159,13 +159,12 @@ module.exports = function(grunt) {
     grunt.registerTask('dev', ['sass', 'watch:scss']);
     grunt.registerTask('build', ['clean:dist','sass', 'copy:distimg','copy:lightboximg','copy:cname', 'processhtml', 'cssmin', 'uglify', 'htmlmin']);
     grunt.registerTask('build-nomin', ['clean:dist','sass', 'copy:distimg', 'processhtml']);
-    
+
     grunt.registerTask('usage', 'display usage parameters', function() {
         console.log("usage :");
         console.log("\t grunt clean:dist - cleans /dist folder");
         console.log("\t grunt dev - development mode");
         console.log("\t grunt build - build and update minimized version to /dist folder");
-        console.log("\t grunt build-nomin  - build and update non minified version to /dist folder");
     });
 
     // add sass to the grunt file

@@ -12,7 +12,7 @@ module.exports = function(grunt) {
         dist: 'dist',
         srcjs: ['js/*.*', '../bower_components/foundation/js/vendor/modernizr.js', '../bower_components/jquery/dist/jquery.js',
             '../bower_components/foundation/js/foundation/foundation.js', '../bower_components/foundation/js/foundation/foundation.topbar.js',
-            '../bower_components/lightbox2/dist/js/lightbox.js'
+            '../bower_components/foundation/js/foundation/foundation.clearing.js','../bower_components/lightbox2/dist/js/lightbox.js'
         ],
         srcscss: ['scss/*.*'],
         srccss: ['css/*.*', '../bower_components/foundation/css/foundation.css', '../bower_components/lightbox2/dist/css/lightbox.css'],

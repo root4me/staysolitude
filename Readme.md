@@ -88,7 +88,7 @@ I haven't tried on windows. you might have to change the '/' to '\\' in sort fun
 grunt build
 ```
 
-6. Check in the code changes or Image changes (check in master)
+6. Check in the code changes or Image changes (check in master branch for this repository)
   Navigate to \staysolitude  
   ```
   git status
@@ -99,4 +99,14 @@ grunt build
   git push
   (push the changes to github master branch for this repository)
   ```
-7. Check in the deployable (check in \dist to gh-pages branch)
+7. Check in the deployable (check in \dist to gh-pages branch for this repository)
+  Navigate to \staysolitude\dist
+
+  ```
+  git status
+  git add [all new files ]
+  git commit -am "[commit comment]"
+  git push
+  ```
+  As soon as the push is completed, the site will reflect the changes
+  

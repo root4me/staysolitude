@@ -88,8 +88,9 @@ I haven't tried on windows. you might have to change the '/' to '\\' in sort fun
 grunt build
 ```
 
-- Check in the code changes or Image changes (check in master branch for this repository)
-  Navigate to \staysolitude  
+- Check in the code changes or Image changes (check in master branch for this repository)  
+
+  Navigate to **\staysolitude  **
   ```
   git status
   git add [all new files except for files under \dist , \bower_components , \node_modules]
@@ -99,8 +100,9 @@ grunt build
   git push
   (push the changes to github master branch for this repository)
   ```
-- Check in the deployable (check in \dist to gh-pages branch for this repository)
-  Navigate to \staysolitude\dist
+- Check in the deployable (check in \dist to gh-pages branch for this repository)  
+
+  Navigate to **\staysolitude\dist**
 
   ```
   git status

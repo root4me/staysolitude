@@ -13,7 +13,7 @@ cd staysolitude
 git clone -b gh-pages https://github.com/root4me/staysolitude.git dist
 ```
 
-    Folder structure will look like the following at this point
+  Folder structure will look like the following at this point
   ```
   ├── staysolitude
   │   ├── app
@@ -50,13 +50,14 @@ grunt dev
 
 - Generate html by running gallerygen script
   Navigate to staysolitude folder and run script
+
 ```
 node gallerygen
 ```  
-    This is a hacked together script and has much scope of improvement . So far it has only been run in ubuntu.  
-    I haven't tried on windows. you might have to change the '/' to '\\' in sort function if using this in windows. File access is typically the first thing that differ in windows. Or you could choose to comment out the sort function.
+  This is a hacked together script and has much scope of improvement . So far it has only been run in ubuntu.  
+  I haven't tried on windows. you might have to change the '/' to '\\' in sort function if using this in windows. File access is typically the first thing that differ in windows. Or you could choose to comment out the sort function.
 
-    Output of this script will look something like the following  
+  Output of this script will look something like the following  
 
   ```
   .

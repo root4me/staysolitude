@@ -95,6 +95,8 @@ grunt build
   git add [all new files except for files under \dist , \bower_components , \node_modules]
   eg: git add app/img/src/*
 
-  git commit -am "adding readme and minor modifications to gallerygen to include sorting"
+  git commit -am "[commit comment]"
+  git push
+  (push the changes to github master branch for this repository)
   ```
 7. Check in the deployable (check in \dist to gh-pages branch)

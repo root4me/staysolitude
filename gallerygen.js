@@ -22,19 +22,21 @@ var getFiles = function(dir) {
           }
         }
     }
+
+    sort(mList);
 }
 
-/*
+// Sort the list based on modified date time of images
 var sort = function(list) {
     list.sort(function(a, b) {
-        if (a > b) return -1;
-        if (a < b) return 1;
-        if (a == b) return 0;
+        if (fs.statSync(path.resolve('app/img', a)).mtime < fs.statSync(path.resolve('app/img', b)).mtime) return -1;
+        if (fs.statSync(path.resolve('app/img', a)).mtime > fs.statSync(path.resolve('app/img', b)).mtime) return 1;
+        if (fs.statSync(path.resolve('app/img', a)).mtime == fs.statSync(path.resolve('app/img', b)).mtime) return 0;
     });
 }
-*/
 
 getFiles('app/img');
+
 
 var o = '';
 var t = '<li><a href="img/medium"><img src="img/small"></a></li>';
@@ -51,5 +53,7 @@ for (var j = 0; j < mList.length; j++) {
   }
 }
 
+console.log("--------------------------------------------\r\n");
 console.log(o);
-console.log('done .. copy and paste the list into   <ul class="clearing-thumbs" data-clearing> inside gallery.html');
+console.log("--------------------------------------------");
+console.log('done ..\r\nCopy and paste the above html into   <ul class="clearing-thumbs" data-clearing> inside gallery.html \r\n');

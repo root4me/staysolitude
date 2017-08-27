@@ -70,16 +70,16 @@ $(document).foundation();
 
 jQuery(document).ready(function($) {
     //set your google maps parameters
-    var latitude = 10.076751,
-        longitude = 76.866077,
-        map_zoom = 12;
+   var latitude = 10.0902513,
+        longitude = 76.9478139,
+        map_zoom = 13;
 
     //google map custom marker icon - .png fallback for IE11
     var is_internetExplorer11 = navigator.userAgent.toLowerCase().indexOf('trident') > -1;
     // var marker_url = (is_internetExplorer11) ? 'http://www.clipartbest.com/cliparts/4Tb/4Bb/4Tb4Bbpjc.png' : 'http://www.clipartbest.com/cliparts/4Tb/4Bb/4Tb4Bbpjc.png';
 
     //define the basic color of your map, plus a value for saturation and brightness
-    var main_color = '#2d313f',
+    var main_color = '',
         saturation_value = -20,
         brightness_value = 5;
 

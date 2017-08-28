@@ -58,15 +58,23 @@
     border-top-right-radius: 2px;
     position: relative;
     min-height: 100px;
-    background-color: $primary-color;
-    
-    img {
+    background-color: $primary-color;    
+   
+  @media only screen and (min-width: 40.063em) {
+     img {
       max-height: 240px;
       min-height: 240px;
-      width: 100%;
+      width: 100%; 
+      } }
+
       
-    }
-    
+  @media only screen and (min-width: 64.063em) {
+     img{
+      max-height: 350px;
+      min-height: 350px;
+      width: 100%;
+       } }
+
 
     .title {
       position: absolute;

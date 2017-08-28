@@ -147,17 +147,16 @@ body {
     position: relative;
     min-height: 100px;
     background-color: #4CAF50; }
-  @media only screen and (min-width: 40.063em) {
-   .card .header img {
-     max-height: 240px;
-      min-height: 240px;
-      width: 100%;  } }
-
-   @media only screen and (min-width: 64.063em) {
-   .card .header img {
-     max-height: 350px;
-      min-height: 350px;
-      width: 100%;  } 
+    @media only screen and (min-width: 40.063em) {
+      .card .header img {
+        max-height: 240px;
+        min-height: 240px;
+        width: 100%; } }
+    @media only screen and (min-width: 64.063em) {
+      .card .header img {
+        max-height: 350px;
+        min-height: 350px;
+        width: 100%; } }
     .card .header .title {
       position: absolute;
       bottom: 0px;

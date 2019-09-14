@@ -2,7 +2,7 @@
   "name": "harish",
   "version": "0.0.1",
   "authors": [
-    "harish"
+    "root4me"
   ],
   "private": true,
   "ignore": [
@@ -13,8 +13,8 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.4",
-    "foundation": "~5.5.2",
-    "lightbox2": "~2.8.1"
+    "jquery": "~3.4.1",
+    "foundation": "~5.5.3",
+    "lightbox2": "~2.11.1"
   }
 }

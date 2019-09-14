@@ -1,5 +1,7 @@
 module.exports = function(grunt) {
 
+    const sass = require('node-sass');
+    
     // Time how long tasks take.
     require('time-grunt')(grunt);
 
@@ -113,6 +115,7 @@ module.exports = function(grunt) {
 
         sass: {
             options: {
+                implementation: sass,
                 sourceMap: true,
                 style: 'expanded'
             },

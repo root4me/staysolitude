@@ -4,7 +4,7 @@ $(document).foundation();
 (function($) {
     var elements = [];
     var elementsOverlay = [];
-
+    
     $.fn.scrollnfadeReinit = function(options) {
         elements.splice(0, elements.length);
         elementsOverlay.splice(0, elements.length);
@@ -152,18 +152,6 @@ jQuery(document).ready(function($) {
             }]
         }, {
             featureType: "poi.government",
-            elementType: "geometry.fill",
-            stylers: [{
-                hue: main_color
-            }, {
-                visibility: "on"
-            }, {
-                lightness: brightness_value
-            }, {
-                saturation: saturation_value
-            }]
-        }, {
-            featureType: "poi.sport_complex",
             elementType: "geometry.fill",
             stylers: [{
                 hue: main_color

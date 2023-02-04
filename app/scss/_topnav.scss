@@ -1,8 +1,8 @@
 /* Top Nav styles */
 
-$top-nav-background: rgb(255,255,255);
+$top-nav-background: $primary-color;
 $top-nav-bottom: 1px solid $divider-color;
-
+$top-nav-expanded-background: rgb(51,51,51);
 
 .namelogo h1 {
     font-family: $primary-font-family;
@@ -17,6 +17,7 @@ $top-nav-bottom: 1px solid $divider-color;
         text-align: center;
     }
 }
+
 
 @media only screen and (min-width: 64.063em) {
     .namelogo h1 {
@@ -37,11 +38,13 @@ $top-nav-bottom: 1px solid $divider-color;
         h1
         {
             a{            
-                color: $primary-color-dark;
+                color: $primary-light-text-color;
                 width: auto;            
             }
         }
     }
+
+    
 
 // overrive foundation top nav right sub menu style
     .top-bar-section li:not(.has-form) a:not(.button) 
@@ -49,14 +52,18 @@ $top-nav-bottom: 1px solid $divider-color;
         background: $top-nav-background;
         font-size: 1em;
         font-weight: 600;
-        color: $primary-color-dark;
+        color: $primary-light-text-color;
     }
     .top-bar-section li:not(.has-form) a:not(.button):hover {
-          background: $top-nav-background; 
+          background: $primary-color-light; 
           color:$primary-color;
     }
 
+    .toggle-topbar.menu-icon a {
+        color: $top-nav-background
+    }
 }
-    
 
-
+.top-bar.expanded .toggle-topbar a {
+    color: $top-nav-expanded-background
+}

@@ -238,22 +238,27 @@ section {
     text-align: left; } }
 
 .contain-to-grid {
-  background: white;
+  background: #4CAF50;
   border-bottom: 1px solid #B6B6B6; }
 
 .top-bar {
-  background: white; }
+  background: #4CAF50; }
   .top-bar .namelogo h1 a {
-    color: #388E3C;
+    color: white;
     width: auto; }
   .top-bar .top-bar-section li:not(.has-form) a:not(.button) {
-    background: white;
+    background: #4CAF50;
     font-size: 1em;
     font-weight: 600;
-    color: #388E3C; }
+    color: white; }
   .top-bar .top-bar-section li:not(.has-form) a:not(.button):hover {
-    background: white;
+    background: #C8E6C9;
     color: #4CAF50; }
+  .top-bar .toggle-topbar.menu-icon a {
+    color: #4CAF50; }
+
+.top-bar.expanded .toggle-topbar a {
+  color: #333333; }
 
 #google-container {
   position: relative;

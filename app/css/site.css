@@ -91,7 +91,12 @@ body {
 .activities {
   background: url("../img/activities_banner.jpg") no-repeat center center;
   background-size: cover; }
+  
+ .booking {
+  background: url("../img/booking_banner.jpg") no-repeat center center;
+  background-size: cover; }
 
+  
 .homecontent {
   padding-top: 2%;
   text-align: center;

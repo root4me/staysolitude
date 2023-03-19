@@ -368,4 +368,25 @@ section {
 .button:hover {
   background: #388E3C; }
 
+.room-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.room {
+    width: 450px;
+    height: 300px;
+    margin: auto;
+}
+
+@media all and (max-width: 500px) {
+    .room-container {
+        flex-direction: column;
+    }
+
+    .room {
+        transform-origin: left;
+    }
+}
+
 /*# sourceMappingURL=site.css.map */

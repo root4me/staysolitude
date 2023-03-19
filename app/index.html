@@ -10,21 +10,17 @@
     <!-- build:css css/foundation.min.css -->
     <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css" />
     <!-- /build -->
-
     <!-- build:css css/site.min.css -->
     <link rel="stylesheet" href="css/site.css" />
     <!-- /build -->
-
     <!-- build:css css/lightbox.min.css -->
     <link href="../bower_components/lightbox2/dist/css/lightbox.css" rel="stylesheet">
     <!-- /build -->
-
     <!-- build:js js/modernizr.min.js -->
     <script src="../bower_components/foundation/js/vendor/modernizr.js"></script>
     <!-- /build -->
-
     <!-- Google map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZRw5AloPNr4wC1eOtCv7zvTSzgMe1w8Q" ></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZRw5AloPNr4wC1eOtCv7zvTSzgMe1w8Q"></script> 
 
 </head>
 
@@ -318,18 +314,22 @@
             </div>
 
             <div class="row">
-                <div class="large-6 columns">                     
-                    <div class="airbnb-embed-frame" data-id="14313682" data-view="home" style="width:450px;height:300px;margin:auto">
+                <div class="room-container">
+                    <div class="airbnb-embed-frame room" 
+                         data-id="14313682" 
+                         data-view="home" 
+                         data-hide-price="true" 
+                         style="max-width:450px;width:100%;min-height:300px;height:100%;margin:auto;">
                         <a href="https://www.airbnb.co.in/rooms/14313682?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">View on Airbnb</a><a href="https://www.airbnb.co.in/rooms/14313682?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">Solitude Munnar, Bliss in the woods</a>
                         <script async="" src="https://www.airbnb.co.in/embeddable/airbnb_jssdk"></script>
-                    </div> 
+                    </div>
                 </div>
 
-                <div class="large-6 columns"> 
-                    <div class="airbnb-embed-frame" data-id="46737083" data-view="home" style="width:450px;height:300px;margin:auto">
+                <div class="room-container">
+                    <div class="airbnb-embed-frame room" data-id="46737083" data-view="home"  data-hide-price="true" style="max-width:450px;width:100%;min-height:300px;height:100%;margin:auto;">
                         <a href="https://www.airbnb.co.in/rooms/46737083?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">View on Airbnb</a><a href="https://www.airbnb.co.in/rooms/46737083?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">Solitude Munnar, Contemporary Mud House</a>
                         <script async="" src="https://www.airbnb.co.in/embeddable/airbnb_jssdk"></script>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </section> 
@@ -436,6 +436,21 @@
             }
         });
 
+        (function () {
+            const resize = () => {
+                let rooms = document.getElementsByClassName('room');
+
+                for (let room of rooms) {
+                    let scale = (window.innerWidth - 15) / room.offsetWidth;
+                    room.style.transform = 'scale(' + scale + ')';
+                }
+            }
+
+            window.onload = () => resize();
+            window.onresize = () => resize();
+        })();
+
+         
     </script>
 
 </body>

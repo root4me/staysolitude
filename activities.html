@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Catalog</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #33cc33;
+            font-size: 32px;
+        }
+        .activity {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            width: 30%;
+            vertical-align: top;
+            text-align: center;
+        }
+        .activity img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #33cc33;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #33cc33;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        /* Responsive design */
+        @media only screen and (max-width: 600px) {
+            /* Adjust styles for smaller screens */
+            .activity {
+                width: 90%;
+                margin: 10px auto;
+            }
+        }
+
+        /* Logo section */
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .logo img {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo section -->
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+
+    <h1>Plan your good times</h1>
+    <div class="activity">
+        <img src="img/cottage_small.jpg" alt="Anakkulam">
+        <h2>Anakkulam</h2>
+        <p>Anakkulam is at a distance of 15 Km from Solitude. With wild elephants arriving in herds at the watering hole, Anakulam is a much sought after destination.</p>
+    </div>
+    <div class="activity">
+        <img src="activity2.jpg" alt="Activity 2">
+        <h2>Activity 2</h2>
+        <p>Description of activity 2.</p>
+        <p><strong>Price:</strong> $20</p>
+        <button>Book Now</button>
+    </div>
+    <div class="activity">
+        <img src="activity3.jpg" alt="Activity 3">
+        <h2>Activity 3</h2>
+        <p>Description of activity 3.</p>
+        <p><strong>Price:</strong> $30</p>
+        <button>Book Now</button>
+    </div>
+</body>
+</html>

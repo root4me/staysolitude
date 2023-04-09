@@ -412,6 +412,25 @@
  
     <script>
 
+        
+
+(function () {
+        const resize = () => {
+            let rooms = document.getElementsByClassName('airbnb-embed-frame');
+            for (let room of rooms) {
+                if ( window.innerWidth < 500 ) {
+                    let scale = (screen.width - 25) / room.offsetWidth;
+                    room.style.transform = 'scale(' + scale + ')';
+                } else {
+                    room.style.transform = 'scale(1)';
+                }
+            }
+        } 
+        
+        window.addEventListener("load", resize);
+        window.addEventListener("resize", resize);
+})();
+
         $(window).on("load", function(e) {
             $('#intro').scrollnfade();
             $('#sporty').scrollnfade();
@@ -435,21 +454,6 @@
                 return true;
             }
         });
-
-        (function () {
-            const resize = () => {
-                let rooms = document.getElementsByClassName('room');
-
-                for (let room of rooms) {
-                    let scale = (window.innerWidth - 15) / room.offsetWidth;
-                    room.style.transform = 'scale(' + scale + ')';
-                }
-            }
-
-            window.onload = () => resize();
-            window.onresize = () => resize();
-        })();
-
          
     </script>
 
